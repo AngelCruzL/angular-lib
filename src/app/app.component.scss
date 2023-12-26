@@ -1,0 +1,38 @@
+nav {
+  block-size: 3em;
+  background-color: royalblue;
+  color: white;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 0;
+    padding-inline: 2em;
+    block-size: 100%;
+
+    li {
+      list-style: none;
+      padding: 0;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        text-transform: capitalize;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+section {
+  margin-inline: auto;
+  inline-size: min(90%, 60em);
+}

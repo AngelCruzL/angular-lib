@@ -1,0 +1,21 @@
+<h2>Join Pipe</h2>
+
+<article>
+  <h3>Valores por defecto (separados con ",")</h3>
+  <p>{{ values | acJoin }}</p>
+</article>
+
+<article>
+  <h3>Valores separados con ", "</h3>
+  <p>{{ values | acJoin: ', ' }}</p>
+</article>
+
+<article>
+  <h3>Valores separados con " | "</h3>
+  <p>{{ values | acJoin: ' | ' }}</p>
+</article>
+
+<article>
+  <h3>Valores vacíos</h3>
+  <p>{{ valuesEmpty | acJoin }}</p>
+</article>
