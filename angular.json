@@ -96,6 +96,39 @@
           }
         }
       }
+    },
+    "ac-ddr": {
+      "projectType": "library",
+      "root": "projects/ac-ddr",
+      "sourceRoot": "projects/ac-ddr/src",
+      "prefix": "ac",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ac-ddr/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ac-ddr/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ac-ddr/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ac-ddr/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "name": "ac-ddr",
+  "version": "0.0.1",
+  "author": {
+    "email": "me@angelcruzl.dev",
+    "name": "Ángel Cruz",
+    "url": "https://angelcruzl.dev"
+  },
+  "description": "Angular sample library",
+  "repository": {
+    "url": "https://github.com/angelcruzl/"
+  },
+  "homepage": "https://github.com/angelcruzl/",
+  "peerDependencies": {
+    "@angular/common": "^17.0.0",
+    "@angular/core": "^17.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
