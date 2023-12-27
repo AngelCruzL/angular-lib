@@ -1,0 +1,31 @@
+.ac-spinner {
+  cursor: default;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  block-size: 100%;
+  inline-size: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  &--overlay {
+    position: fixed;
+
+    .ac-spinner__spinner {
+      position: fixed;
+    }
+  }
+
+  &--embedded {
+    position: absolute;
+
+    .ac-spinner__spinner {
+      position: absolute;
+    }
+  }
+
+  &__spinner {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

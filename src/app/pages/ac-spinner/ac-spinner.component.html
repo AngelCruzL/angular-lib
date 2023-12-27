@@ -1,0 +1,21 @@
+<h2>AC Spinner <span>Modo actual: {{ isEmbedded ? 'embebido' : 'no embebido' }}</span></h2>
+
+<div class="actions-container">
+  <button (click)="startSpinner()" type="button">Activar Spinner</button>
+  <button (click)="changeEmbeddedMode()" type="button">Cambiar Modo</button>
+</div>
+
+<div class="embedded-container">
+  @if (isEmbedded) {
+    <ac-spinner [embedded]="isEmbedded"/>
+  }
+  <p>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, esse, inventore laudantium odit officia perspiciatis, praesentium provident quisquam rerum suscipit totam unde? Corporis maxime mollitia quibusdam sunt temporibus, voluptatibus. Omnis.</span>
+    <span>Corporis dolore error, eum expedita fugiat itaque laborum, laudantium modi provident quam saepe sunt tempora vitae. Asperiores commodi consectetur debitis delectus ducimus eum facere iste labore, laudantium nam possimus quaerat.</span>
+    <span>Aperiam harum impedit reiciendis saepe sapiente sint tenetur? Accusamus aut consequatur dolorem doloribus eaque eius expedita laudantium libero magni quae quibusdam quidem quod recusandae similique, sit tempora temporibus ullam, voluptatem?</span>
+  </p>
+</div>
+
+@if (!isEmbedded) {
+  <ac-spinner/>
+}

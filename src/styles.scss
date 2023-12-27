@@ -19,3 +19,26 @@ body {
   font-family: 'Lato', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
+
+.actions-container {
+  display: flex;
+  gap: 1em;
+  margin-block: 1em;
+
+  button {
+    border: none;
+    border-radius: 100vw;
+    outline: none;
+    padding-block: 0.75em;
+    padding-inline: 1.5em;
+    background-color: royalblue;
+    color: white;
+    transition: outline-color 0.2s, background-color 0.2s;
+
+    &:is(:hover, :focus):not(:disabled) {
+      cursor: pointer;
+      outline: royalblue;
+      background-color: darkblue;
+    }
+  }
+}

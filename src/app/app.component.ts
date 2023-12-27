@@ -12,5 +12,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 export class AppComponent {
   navItems: { name: string; path: string }[] = [
     { name: 'pipe join', path: 'pipe-join' },
+    { name: 'spinner', path: 'spinner' },
   ];
 }

@@ -1,0 +1,10 @@
+@if (spinnerService.isSpinnerVisible()) {
+  <div [ngClass]="{
+'ac-spinner--overlay': !embedded,
+'ac-spinner--embedded': embedded,
+}" class="ac-spinner">
+    <div class="ac-spinner__spinner">
+      <img [ngSrc]="imagePath" alt="" height="100" width="100">
+    </div>
+  </div>
+}
