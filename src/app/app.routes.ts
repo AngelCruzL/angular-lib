@@ -9,4 +9,12 @@ export const routes: Routes = [
     path: 'spinner',
     loadComponent: () => import('./pages/ac-spinner/ac-spinner.component'),
   },
+  {
+    path: 'toast',
+    loadComponent: () => import('./pages/ac-toast/ac-toast.component'),
+  },
+  {
+    path: '**',
+    redirectTo: 'pipe-join',
+  },
 ];
